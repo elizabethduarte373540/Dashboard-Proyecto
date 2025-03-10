@@ -1,0 +1,56 @@
+Instrucciones para abrir y ejecutar el proyecto de Streamlit
+Instalar Python (si no está instalado):
+
+Descargue e instale la última versión de Python desde python.org.
+Durante la instalación, asegúrese de marcar la casilla "Add Python to PATH".
+Clonar o copiar el proyecto:
+
+Coloque todos los archivos del proyecto, incluyendo los archivos .py, .txt, y cualquier otro archivo necesario, en una carpeta local en su computadora. Por ejemplo: C:\Users\Usuario\MisProyectos\Unidad4.
+Abrir una terminal (Command Prompt o PowerShell en Windows):
+
+Presione Win + R, escriba cmd o powershell y presione Enter.
+Navegue al directorio donde colocó el proyecto usando el comando cd. Por ejemplo:
+bash
+Copy code
+cd C:\Users\Usuario\MisProyectos\Unidad4
+Instalar Streamlit y las bibliotecas necesarias:
+
+Ejecute el siguiente comando para instalar Streamlit y otras dependencias que utiliza el proyecto (si se incluye un archivo requirements.txt):
+bash
+Copy code
+pip install -r requirements.txt
+Si no hay un archivo requirements.txt, instale las bibliotecas manualmente:
+bash
+Copy code
+pip install streamlit pandas matplotlib
+Verificar que todos los archivos necesarios estén presentes:
+
+Asegúrese de que los siguientes archivos estén en la carpeta del proyecto:
+El script principal del dashboard (.py).
+Los archivos .txt necesarios (Elizabeth.txt, Karen.txt, Evelyn.txt).
+Los archivos CSV, como Pagina_Web.csv y otros mencionados en el código.
+Ejecutar la aplicación de Streamlit:
+
+En la terminal, ejecute el siguiente comando:
+bash
+Copy code
+streamlit run nombre_del_script.py
+Reemplace nombre_del_script.py por el nombre real del archivo principal del proyecto (por ejemplo, dashboard.py).
+Abrir la aplicación en el navegador:
+
+Una vez que ejecute el comando anterior, Streamlit abrirá automáticamente la aplicación en su navegador predeterminado. Si no se abre, copie y pegue la URL que aparece en la terminal, algo como:
+arduino
+Copy code
+http://localhost:8501
+Interactuar con la aplicación:
+
+En la barra lateral, seleccione las opciones para visualizar cada análisis (Elizabeth, Karen, Evelyn).
+Los resultados se mostrarán junto con los gráficos y el análisis de los archivos .txt.
+Solución de problemas comunes:
+
+Error de archivo no encontrado: Verifique que los archivos .txt y .csv están en la misma carpeta que el script.
+Módulo no encontrado: Ejecute nuevamente el comando pip install para asegurarse de que todas las bibliotecas necesarias están instaladas.
+Problemas con permisos: Asegúrese de que tiene permisos de lectura para todos los archivos en el proyecto.
+Cerrar la aplicación:
+
+Para detener la aplicación de Streamlit, vaya a la terminal y presione Ctrl + C.
